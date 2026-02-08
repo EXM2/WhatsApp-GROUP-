@@ -6,6 +6,7 @@
 <title>قروبات واتساب - دليل شامل ذكي</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://pl28557264.effectivegatecpm.com/66/c7/7d/66c77d7ac95f5328a050e5b7c4929460.js"></script>
 
 <style>
 :root {
@@ -890,6 +891,149 @@ body {
   transform: translateY(-5px);
 }
 
+/* Ad Interstitial Overlay */
+.ad-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.ad-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ad-container {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.ad-overlay.active .ad-container {
+  transform: scale(1);
+}
+
+.ad-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.ad-header i {
+  animation: spin 2s linear infinite;
+}
+
+.ad-content {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: var(--light);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ad-countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.ad-countdown-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+}
+
+.ad-countdown-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.ad-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .ad-progress-bar {
+  background: #3a3a4a;
+}
+
+.ad-progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: 3px;
+  transition: width 1s linear;
+  width: 0%;
+}
+
+.ad-skip-btn {
+  padding: 15px 40px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+  animation: fadeInUp 0.3s ease;
+}
+
+.ad-skip-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+}
+
+@media (max-width: 480px) {
+  .ad-container {
+    padding: 20px;
+    width: 95%;
+  }
+  .ad-content {
+    min-height: 200px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .header h1 {
@@ -1150,6 +1294,30 @@ body {
 
   <!-- Groups Grid -->
   <div class="groups-grid" id="groupsList"></div>
+</div>
+
+<!-- Ad Interstitial Overlay -->
+<div class="ad-overlay" id="adOverlay">
+  <div class="ad-container">
+    <div class="ad-header">
+      <i class="fas fa-spinner"></i>
+      <span>جاري تجهيز رابط القروب...</span>
+    </div>
+    <div class="ad-content" id="adContent">
+      <!-- Adsterra ad loads here -->
+    </div>
+    <div class="ad-countdown-container">
+      <div class="ad-countdown-circle" id="adCountdown">7</div>
+      <p class="ad-countdown-text" id="adCountdownText">سيتم نقلك للقروب بعد <strong id="adSeconds">7</strong> ثواني</p>
+      <div class="ad-progress-bar">
+        <div class="ad-progress-fill" id="adProgressFill"></div>
+      </div>
+    </div>
+    <button class="ad-skip-btn" id="adSkipBtn">
+      <i class="fab fa-whatsapp"></i>
+      انضم الآن
+    </button>
+  </div>
 </div>
 
 <!-- Toast Container -->
@@ -1697,9 +1865,94 @@ document.getElementById('deleteModal').addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeDeleteModal();
+    // أيضاً إغلاق الإعلان إذا انتهى العد
+    const skipBtn = document.getElementById('adSkipBtn');
+    if (skipBtn && skipBtn.style.display === 'inline-flex') {
+      document.getElementById('adOverlay').classList.remove('active');
+    }
   }
   if (e.key === 'Enter' && document.getElementById('deleteModal').classList.contains('active')) {
     confirmDelete();
+  }
+});
+
+// ============ إعلان Adsterra قبل الانضمام ============
+let adTargetLink = null;
+let adCountdownInterval = null;
+
+// اعتراض نقرات زر الانضمام بدون تعديل الكود الأصلي
+document.addEventListener('click', function(e) {
+  const joinBtn = e.target.closest('.join-btn');
+  if (joinBtn) {
+    e.preventDefault();
+    e.stopPropagation();
+    adTargetLink = joinBtn.getAttribute('href');
+    showAdOverlay();
+  }
+});
+
+function showAdOverlay() {
+  const overlay = document.getElementById('adOverlay');
+  const countdownEl = document.getElementById('adCountdown');
+  const secondsEl = document.getElementById('adSeconds');
+  const skipBtn = document.getElementById('adSkipBtn');
+  const countdownText = document.getElementById('adCountdownText');
+  const progressFill = document.getElementById('adProgressFill');
+
+  // إعادة تعيين
+  overlay.classList.add('active');
+  skipBtn.style.display = 'none';
+  countdownText.style.display = 'block';
+  progressFill.style.width = '0%';
+
+  let seconds = 7;
+  countdownEl.textContent = seconds;
+  secondsEl.textContent = seconds;
+
+  if (adCountdownInterval) clearInterval(adCountdownInterval);
+
+  // بدء شريط التقدم
+  setTimeout(() => {
+    progressFill.style.width = '100%';
+    progressFill.style.transition = 'width 7s linear';
+  }, 50);
+
+  adCountdownInterval = setInterval(() => {
+    seconds--;
+    countdownEl.textContent = seconds;
+    secondsEl.textContent = seconds;
+
+    if (seconds <= 0) {
+      clearInterval(adCountdownInterval);
+      adCountdownInterval = null;
+      countdownText.style.display = 'none';
+      skipBtn.style.display = 'inline-flex';
+    }
+  }, 1000);
+}
+
+// زر الانضمام بعد انتهاء العد
+document.getElementById('adSkipBtn').addEventListener('click', function() {
+  document.getElementById('adOverlay').classList.remove('active');
+  // إعادة تعيين شريط التقدم
+  const progressFill = document.getElementById('adProgressFill');
+  progressFill.style.transition = 'none';
+  progressFill.style.width = '0%';
+  if (adTargetLink) {
+    window.open(adTargetLink, '_blank');
+  }
+});
+
+// إغلاق عند النقر خارج المحتوى (فقط بعد انتهاء العد)
+document.getElementById('adOverlay').addEventListener('click', function(e) {
+  if (e.target === this) {
+    const skipBtn = document.getElementById('adSkipBtn');
+    if (skipBtn.style.display === 'inline-flex') {
+      this.classList.remove('active');
+      const progressFill = document.getElementById('adProgressFill');
+      progressFill.style.transition = 'none';
+      progressFill.style.width = '0%';
+    }
   }
 });
 </script>
