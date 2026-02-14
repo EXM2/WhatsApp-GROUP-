@@ -3,17 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>قروبات واتساب - دليل شامل ذكي</title>
+<title>قروبات تلجرام - دليل شامل ذكي</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<!-- بانر إعلاني ثابت من Adsterra -->
-<script type='text/javascript' src='//pl28557264.effectivegatecpm.com/89/19/2e/89192eacad9cfab1a21b1d5b1b3e1f3e.js'></script>
+<script src="https://pl28557264.effectivegatecpm.com/66/c7/7d/66c77d7ac95f5328a050e5b7c4929460.js"></script>
+
 <style>
-/* الأنماط كما هي مع بعض الإضافات */
 :root {
-  --primary: #25d366;
-  --primary-dark: #128c7e;
-  --secondary: #667eea;
+  --primary: #27A7E7;        /* أزرق تلجرام */
+  --primary-dark: #1E8FC7;   /* أزرق داكن */
+  --secondary: #667eea;      /* يمكن تعديله لاحقاً */
   --danger: #ff4757;
   --warning: #ffa502;
   --dark: #1a1a2e;
@@ -65,7 +64,7 @@ body {
 .loading-spinner {
   width: 60px;
   height: 60px;
-  border: 4px solid rgba(37, 211, 102, 0.2);
+  border: 4px solid rgba(39, 167, 231, 0.2);
   border-top-color: var(--primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
@@ -79,7 +78,7 @@ body {
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, var(--secondary) 0%, #764ba2 50%, var(--primary-dark) 100%);
+  background: linear-gradient(135deg, #27A7E7 0%, #1E8FC7 50%, #0E6B9E 100%);
   padding: 30px 20px;
   text-align: center;
   position: relative;
@@ -145,7 +144,7 @@ body {
 .stat-item i { font-size: 1.5rem; }
 .stat-number { font-size: 1.5rem; font-weight: 700; }
 
-/* Navigation Links */
+/* Navigation Links - يمكن إضافة رابط للعودة للواتساب */
 .nav-links {
   margin-top: 20px;
   display: flex;
@@ -245,127 +244,6 @@ body {
   padding: 30px 20px;
 }
 
-/* Ad Banner */
-.ad-banner {
-  margin: 20px 0 30px;
-  text-align: center;
-  min-height: 90px;
-  background: var(--card-bg);
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: var(--shadow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Admin Panel */
-.admin-panel {
-  background: var(--card-bg);
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: var(--shadow);
-  display: none;
-}
-
-.admin-panel.visible {
-  display: block;
-}
-
-.admin-panel h2 {
-  color: var(--primary-dark);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.admin-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.stat-card {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.stat-card i {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.stat-card .stat-value {
-  font-size: 2rem;
-  font-weight: 800;
-}
-
-.admin-groups {
-  display: grid;
-  gap: 15px;
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.admin-group-item {
-  background: var(--light);
-  padding: 15px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.admin-group-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.admin-group-info img {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.admin-group-actions {
-  display: flex;
-  gap: 10px;
-}
-
-.admin-btn {
-  padding: 8px 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: var(--transition);
-}
-
-.admin-btn.edit {
-  background: var(--warning);
-  color: white;
-}
-
-.admin-btn.delete {
-  background: var(--danger);
-  color: white;
-}
-
-.admin-btn:hover {
-  transform: translateY(-2px);
-}
-
 /* Add Form */
 .add-form-container {
   background: var(--card-bg);
@@ -449,7 +327,7 @@ body {
 .form-group select:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.1);
+  box-shadow: 0 0 0 4px rgba(39, 167, 231, 0.1);
 }
 
 .form-group input.error {
@@ -479,7 +357,7 @@ body {
 
 .image-upload:hover {
   border-color: var(--primary);
-  background: rgba(37, 211, 102, 0.05);
+  background: rgba(39, 167, 231, 0.05);
 }
 
 .image-upload input {
@@ -520,7 +398,7 @@ body {
 
 .submit-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 10px 30px rgba(39, 167, 231, 0.3);
 }
 
 .submit-btn:disabled {
@@ -571,7 +449,7 @@ body {
 
 .search-box input:focus {
   outline: none;
-  box-shadow: var(--shadow), 0 0 0 3px rgba(37, 211, 102, 0.2);
+  box-shadow: var(--shadow), 0 0 0 3px rgba(39, 167, 231, 0.2);
 }
 
 .search-box i {
@@ -816,7 +694,7 @@ body {
   color: white;
 }
 
-.join-btn:hover { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); }
+.join-btn:hover { box-shadow: 0 8px 25px rgba(39, 167, 231, 0.3); }
 
 .copy-btn {
   background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
@@ -825,6 +703,12 @@ body {
 
 .share-btn {
   background: linear-gradient(135deg, #6f42c1 0%, #4a148c 100%);
+  color: white;
+}
+
+.delete-btn {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, var(--danger) 0%, #c0392b 100%);
   color: white;
 }
 
@@ -1026,7 +910,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition);
-  box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 5px 20px rgba(39, 167, 231, 0.3);
 }
 
 .scroll-top.visible {
@@ -1036,6 +920,149 @@ body {
 
 .scroll-top:hover {
   transform: translateY(-5px);
+}
+
+/* Ad Interstitial Overlay */
+.ad-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.ad-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ad-container {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.ad-overlay.active .ad-container {
+  transform: scale(1);
+}
+
+.ad-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.ad-header i {
+  animation: spin 2s linear infinite;
+}
+
+.ad-content {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: var(--light);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ad-countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.ad-countdown-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 5px 20px rgba(39, 167, 231, 0.3);
+  transition: all 0.3s ease;
+}
+
+.ad-countdown-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.ad-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .ad-progress-bar {
+  background: #3a3a4a;
+}
+
+.ad-progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: 3px;
+  transition: width 1s linear;
+  width: 0%;
+}
+
+.ad-skip-btn {
+  padding: 15px 40px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+  animation: fadeInUp 0.3s ease;
+}
+
+.ad-skip-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(39, 167, 231, 0.3);
+}
+
+@media (max-width: 480px) {
+  .ad-container {
+    padding: 20px;
+    width: 95%;
+  }
+  .ad-content {
+    min-height: 200px;
+  }
 }
 
 /* Responsive */
@@ -1175,8 +1202,8 @@ body {
 <!-- Header -->
 <header class="header">
   <h1>
-    <i class="fab fa-whatsapp"></i>
-    قروبات واتساب
+    <i class="fab fa-telegram"></i>
+    قروبات تلجرام
   </h1>
   <div class="stats-bar">
     <div class="stat-item">
@@ -1190,68 +1217,22 @@ body {
       <span class="stat-number" id="favCount">0</span>
     </div>
   </div>
-  <!-- زر الانتقال إلى قروبات تلجرام -->
+  <!-- زر العودة إلى قروبات واتساب (اختياري) -->
   <div class="nav-links">
-    <a href="watch.html" class="nav-link telegram">
-      <i class="fab fa-telegram"></i>
-      <span>قروبات تلجرام</span>
+    <a href="index.html" class="nav-link whatsapp">
+      <i class="fab fa-whatsapp"></i>
+      <span>قروبات واتساب</span>
     </a>
   </div>
 </header>
 
 <div class="container">
-  <!-- إعلان ثابت -->
-  <div class="ad-banner">
-    <!-- يمكنك وضع كود الإعلان هنا مباشرة -->
-    <div id="adContainer">
-      <script type='text/javascript'>
-        atOptions = {
-          'key' : '89192eacad9cfab1a21b1d5b1b3e1f3e',
-          'format' : 'iframe',
-          'height' : 90,
-          'width' : 728,
-          'params' : {}
-        };
-      </script>
-      <script type='text/javascript' src='//www.highperformanceformat.com/89192eacad9cfab1a21b1d5b1b3e1f3e/invoke.js'></script>
-    </div>
-  </div>
-
-  <!-- لوحة الإدارة المخفية -->
-  <div class="admin-panel" id="adminPanel">
-    <h2><i class="fas fa-cog"></i> لوحة التحكم</h2>
-    <div class="admin-stats">
-      <div class="stat-card">
-        <i class="fab fa-whatsapp"></i>
-        <div class="stat-value" id="adminWhatsappCount">0</div>
-        <div>قروبات واتساب</div>
-      </div>
-      <div class="stat-card">
-        <i class="fab fa-telegram"></i>
-        <div class="stat-value" id="adminTelegramCount">0</div>
-        <div>قروبات تلجرام</div>
-      </div>
-      <div class="stat-card">
-        <i class="fas fa-users"></i>
-        <div class="stat-value" id="adminTotalMembers">0</div>
-        <div>إجمالي الأعضاء</div>
-      </div>
-      <div class="stat-card">
-        <i class="fas fa-eye"></i>
-        <div class="stat-value" id="adminVisitors">0</div>
-        <div>عدد الزوار</div>
-      </div>
-    </div>
-    <h3>جميع القروبات (واتساب + تلجرام)</h3>
-    <div class="admin-groups" id="adminGroupsList"></div>
-  </div>
-
   <!-- Add Form -->
   <div class="add-form-container">
     <div class="form-header collapsed" onclick="toggleForm()">
       <h2>
         <i class="fas fa-plus-circle"></i>
-        إضافة قروب جديد
+        إضافة قروب تلجرام جديد
       </h2>
       <i class="fas fa-chevron-up toggle-icon"></i>
     </div>
@@ -1264,7 +1245,7 @@ body {
 
       <div class="form-group">
         <label><i class="fas fa-link"></i> رابط القروب</label>
-        <input type="url" id="groupLink" placeholder="https://chat.whatsapp.com/..." required>
+        <input type="url" id="groupLink" placeholder="https://t.me/..." required>
       </div>
 
       <div class="form-group">
@@ -1353,6 +1334,30 @@ body {
   <div class="groups-grid" id="groupsList"></div>
 </div>
 
+<!-- Ad Interstitial Overlay -->
+<div class="ad-overlay" id="adOverlay">
+  <div class="ad-container">
+    <div class="ad-header">
+      <i class="fas fa-spinner"></i>
+      <span>جاري تجهيز رابط القروب...</span>
+    </div>
+    <div class="ad-content" id="adContent">
+      <!-- Adsterra ad loads here -->
+    </div>
+    <div class="ad-countdown-container">
+      <div class="ad-countdown-circle" id="adCountdown">7</div>
+      <p class="ad-countdown-text" id="adCountdownText">سيتم نقلك للقروب بعد <strong id="adSeconds">7</strong> ثواني</p>
+      <div class="ad-progress-bar">
+        <div class="ad-progress-fill" id="adProgressFill"></div>
+      </div>
+    </div>
+    <button class="ad-skip-btn" id="adSkipBtn">
+      <i class="fab fa-telegram"></i>
+      انضم الآن
+    </button>
+  </div>
+</div>
+
 <!-- Toast Container -->
 <div class="toast-container" id="toastContainer"></div>
 
@@ -1373,42 +1378,12 @@ body {
   </div>
 </div>
 
-<!-- Edit Modal -->
-<div class="modal-overlay" id="editModal">
-  <div class="modal">
-    <h3><i class="fas fa-edit"></i> تعديل القروب</h3>
-    <p>أدخل البيانات الجديدة</p>
-    <input type="text" class="modal-input" id="editName" placeholder="اسم القروب">
-    <input type="url" class="modal-input" id="editLink" placeholder="الرابط">
-    <input type="number" class="modal-input" id="editMembers" placeholder="عدد الأعضاء">
-    <select class="modal-input" id="editCategory">
-      <option value="general">عام</option>
-      <option value="games">ألعاب</option>
-      <option value="study">دراسة</option>
-      <option value="tech">تقنية</option>
-      <option value="sports">رياضة</option>
-      <option value="news">أخبار</option>
-      <option value="entertainment">ترفيه</option>
-      <option value="business">أعمال</option>
-      <option value="other">أخرى</option>
-    </select>
-    <div class="modal-actions">
-      <button class="confirm-btn" onclick="saveEdit()">
-        <i class="fas fa-save"></i> حفظ
-      </button>
-      <button class="cancel-btn" onclick="closeEditModal()">
-        <i class="fas fa-times"></i> إلغاء
-      </button>
-    </div>
-  </div>
-</div>
-
 <!-- Firebase SDK -->
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
-import { getDatabase, ref, push, get, remove, update, onValue, off, increment } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js";
+import { getDatabase, ref, push, get, remove, update, onValue, off } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js";
 
-// ============ إعداد Firebase ============
+// ============ إعداد Firebase (نفس الإعدادات) ============
 const firebaseConfig = {
   apiKey: "AIzaSyCEEWOwJJPhRcd7tN00WYpkhMMqG9GKXhw",
   authDomain: "whatsapp-group-7f4ec.firebaseapp.com",
@@ -1421,17 +1396,13 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
-const groupsRef = ref(db, 'groups');
+// استخدام مسار منفصل لقروبات تلجرام
 const telegramGroupsRef = ref(db, 'telegram-groups');
-const visitorsRef = ref(db, 'visitors');
 
 // ============ المتغيرات العامة ============
 let groups = {};
-let telegramGroups = {};
 let currentFilter = 'all';
 let deleteTargetKey = null;
-let editTargetKey = null;
-let editTargetType = null;
 const DELETE_PASSWORD = '123456';
 
 // ============ التصنيفات ============
@@ -1451,45 +1422,18 @@ const categories = {
 loadTheme();
 setupScrollListener();
 setupConnectionMonitor();
-updateVisitorCountOnce();
 
-// ============ تحديث عداد الزوار لمرة واحدة لكل جلسة ============
-function updateVisitorCountOnce() {
-  // نستخدم sessionStorage لمنع العد المتكرر لنفس الزائر
-  const visited = sessionStorage.getItem('visited');
-  if (!visited) {
-    const visitorCountRef = ref(db, 'visitors/count');
-    update(visitorCountRef, { count: increment(1) }).catch(() => {});
-    sessionStorage.setItem('visited', 'true');
-  }
-}
-
-// ============ الاستماع للتغييرات في Firebase ============
-onValue(groupsRef, (snapshot) => {
+// ============ الاستماع للتغييرات في Firebase (Real-time) ============
+onValue(telegramGroupsRef, (snapshot) => {
   groups = snapshot.val() || {};
   renderGroups();
   updateStats();
-  if (document.getElementById('adminPanel').classList.contains('visible')) {
-    loadAdminData();
-  }
+  hideLoading();
+}, (error) => {
+  console.error('Firebase Error:', error);
+  showToast('حدث خطأ في الاتصال بقاعدة البيانات', 'error');
+  hideLoading();
 });
-
-onValue(telegramGroupsRef, (snapshot) => {
-  telegramGroups = snapshot.val() || {};
-  if (document.getElementById('adminPanel').classList.contains('visible')) {
-    loadAdminData();
-  }
-});
-
-onValue(visitorsRef, (snapshot) => {
-  const visitors = snapshot.val()?.count || 0;
-  document.getElementById('adminVisitors').textContent = visitors;
-});
-
-// ============ إخفاء شاشة التحميل ============
-setTimeout(() => {
-  document.getElementById('loadingOverlay').classList.add('hidden');
-}, 500);
 
 // ============ مراقبة حالة الاتصال ============
 function setupConnectionMonitor() {
@@ -1497,6 +1441,7 @@ function setupConnectionMonitor() {
   onValue(connectedRef, (snap) => {
     const statusEl = document.getElementById('connectionStatus');
     const textEl = document.getElementById('connectionText');
+
     if (snap.val() === true) {
       statusEl.className = 'connection-status online';
       textEl.textContent = 'متصل';
@@ -1507,10 +1452,18 @@ function setupConnectionMonitor() {
   });
 }
 
+// ============ إخفاء شاشة التحميل ============
+function hideLoading() {
+  setTimeout(() => {
+    document.getElementById('loadingOverlay').classList.add('hidden');
+  }, 500);
+}
+
 // ============ الوضع الداكن ============
 window.toggleTheme = function() {
   const body = document.body;
   const btn = document.querySelector('.theme-toggle i');
+
   if (body.getAttribute('data-theme') === 'dark') {
     body.removeAttribute('data-theme');
     btn.className = 'fas fa-moon';
@@ -1525,157 +1478,44 @@ window.toggleTheme = function() {
 function loadTheme() {
   const theme = localStorage.getItem('theme');
   const btn = document.querySelector('.theme-toggle i');
+
   if (theme === 'dark') {
     document.body.setAttribute('data-theme', 'dark');
     btn.className = 'fas fa-sun';
   }
 }
 
-// ============ كشف الكود السري في البحث ============
-document.getElementById('searchInput').addEventListener('input', function(e) {
-  if (e.target.value === '0015VE$0015VE$') {
-    document.getElementById('adminPanel').classList.add('visible');
-    e.target.value = '';
-    loadAdminData();
-  } else {
-    applyFilters();
-  }
-});
-
-// ============ تحميل بيانات لوحة الإدارة ============
-function loadAdminData() {
-  const whatsappGroups = Object.values(groups);
-  const telegramGroupsArray = Object.values(telegramGroups);
-  document.getElementById('adminWhatsappCount').textContent = whatsappGroups.length;
-  document.getElementById('adminTelegramCount').textContent = telegramGroupsArray.length;
-  
-  const totalMembers = [...whatsappGroups, ...telegramGroupsArray].reduce((acc, g) => acc + (g.members || 0), 0);
-  document.getElementById('adminTotalMembers').textContent = totalMembers.toLocaleString('ar-EG');
-  
-  const allGroups = [
-    ...whatsappGroups.map(g => ({ ...g, type: 'whatsapp', key: Object.keys(groups).find(k => groups[k] === g) })),
-    ...telegramGroupsArray.map(g => ({ ...g, type: 'telegram', key: Object.keys(telegramGroups).find(k => telegramGroups[k] === g) }))
-  ];
-  
-  const listEl = document.getElementById('adminGroupsList');
-  listEl.innerHTML = allGroups.map(g => `
-    <div class="admin-group-item">
-      <div class="admin-group-info">
-        ${g.image ? `<img src="${g.image}" alt="">` : '<i class="fas fa-users" style="font-size:2rem;"></i>'}
-        <div>
-          <strong>${escapeHtml(g.name)}</strong><br>
-          <small>${g.type === 'whatsapp' ? 'واتساب' : 'تلجرام'} - ${g.members} عضو</small>
-        </div>
-      </div>
-      <div class="admin-group-actions">
-        <button class="admin-btn edit" onclick="editGroup('${g.key}', '${g.type}')"><i class="fas fa-edit"></i> تعديل</button>
-        <button class="admin-btn delete" onclick="openDeleteModal('${g.key}', '${g.type}')"><i class="fas fa-trash"></i> حذف</button>
-      </div>
-    </div>
-  `).join('');
-}
-
-// ============ تعديل قروب ============
-window.editGroup = function(key, type) {
-  editTargetKey = key;
-  editTargetType = type;
-  const group = type === 'whatsapp' ? groups[key] : telegramGroups[key];
-  if (!group) return;
-  
-  document.getElementById('editName').value = group.name || '';
-  document.getElementById('editLink').value = group.link || '';
-  document.getElementById('editMembers').value = group.members || '';
-  document.getElementById('editCategory').value = group.category || 'general';
-  
-  document.getElementById('editModal').classList.add('active');
-};
-
-window.closeEditModal = function() {
-  document.getElementById('editModal').classList.remove('active');
-  editTargetKey = null;
-  editTargetType = null;
-};
-
-window.saveEdit = async function() {
-  const name = document.getElementById('editName').value.trim();
-  const link = document.getElementById('editLink').value.trim();
-  const members = parseInt(document.getElementById('editMembers').value);
-  const category = document.getElementById('editCategory').value;
-  
-  if (!name || !link || !members) {
-    showToast('جميع الحقول مطلوبة', 'error');
-    return;
-  }
-  
-  const updates = { name, link, members, category };
-  const refPath = editTargetType === 'whatsapp' ? `groups/${editTargetKey}` : `telegram-groups/${editTargetKey}`;
-  
-  try {
-    await update(ref(db, refPath), updates);
-    closeEditModal();
-    showToast('تم التعديل بنجاح', 'success');
-    loadAdminData();
-  } catch (error) {
-    showToast('حدث خطأ', 'error');
-  }
-};
-
-// ============ حذف قروب ============
-window.openDeleteModal = function(key, type) {
-  deleteTargetKey = key;
-  editTargetType = type;
-  document.getElementById('deleteModal').classList.add('active');
-  document.getElementById('passwordInput').value = '';
-  document.getElementById('passwordInput').focus();
-};
-
-window.closeDeleteModal = function() {
-  deleteTargetKey = null;
-  document.getElementById('deleteModal').classList.remove('active');
-};
-
-window.confirmDelete = async function() {
-  const password = document.getElementById('passwordInput').value;
-  if (password !== DELETE_PASSWORD) {
-    showToast('كلمة المرور غير صحيحة!', 'error');
-    return;
-  }
-  try {
-    const refPath = editTargetType === 'whatsapp' ? `groups/${deleteTargetKey}` : `telegram-groups/${deleteTargetKey}`;
-    await remove(ref(db, refPath));
-    closeDeleteModal();
-    showToast('تم الحذف بنجاح', 'success');
-    loadAdminData();
-  } catch (error) {
-    showToast('حدث خطأ', 'error');
-  }
-};
-
 // ============ نموذج الإضافة ============
 window.toggleForm = function() {
   const form = document.getElementById('groupForm');
   const header = document.querySelector('.form-header');
+
   form.classList.toggle('hidden');
   header.classList.toggle('collapsed');
-};
+}
 
+// ============ معاينة الصورة مع التحقق ============
 window.previewImage = function(input) {
   const file = input.files[0];
   const preview = document.getElementById('imagePreview');
   const uploadArea = document.getElementById('imageUpload');
+
   if (file) {
     const allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
     if (!allowedTypes.includes(file.type)) {
-      showToast('نوع الملف غير مدعوم', 'error');
+      showToast('نوع الملف غير مدعوم. الرجاء اختيار صورة بصيغة JPG, PNG, GIF أو WebP', 'error');
       input.value = '';
       return;
     }
+
+    // حد 500KB للـ Firebase (لأن Base64 يزيد الحجم)
     const maxSize = 500 * 1024;
     if (file.size > maxSize) {
       showToast('حجم الصورة كبير جداً. الحد الأقصى 500KB', 'error');
       input.value = '';
       return;
     }
+
     const reader = new FileReader();
     reader.onload = (e) => {
       preview.src = e.target.result;
@@ -1685,58 +1525,76 @@ window.previewImage = function(input) {
     };
     reader.readAsDataURL(file);
   }
-};
+}
 
+// ============ إضافة قروب تلجرام جديد ============
 document.getElementById('groupForm').addEventListener('submit', async (e) => {
   e.preventDefault();
+
   const name = document.getElementById('groupName').value.trim();
   const link = document.getElementById('groupLink').value.trim();
   const members = parseInt(document.getElementById('groupMembers').value);
   const category = document.getElementById('groupCategory').value;
   const imageInput = document.getElementById('groupImage');
-  
-  if (!link.includes('chat.whatsapp.com')) {
-    showToast('الرجاء إدخال رابط واتساب صحيح', 'error');
+
+  // التحقق من الرابط (يجب أن يكون رابط تلجرام صحيح)
+  if (!link.includes('t.me') && !link.includes('telegram.me') && !link.includes('telegram.dog')) {
+    showToast('الرجاء إدخال رابط تلجرام صحيح (يحتوي على t.me)', 'error');
     document.getElementById('groupLink').classList.add('error');
-    setTimeout(() => document.getElementById('groupLink').classList.remove('error'), 1000);
+    setTimeout(() => {
+      document.getElementById('groupLink').classList.remove('error');
+    }, 1000);
     return;
   }
-  
+
+  // التحقق من تكرار الرابط
   const existingLinks = Object.values(groups).map(g => g.link);
   if (existingLinks.includes(link)) {
     showToast('هذا القروب موجود بالفعل!', 'warning');
     return;
   }
-  
+
   const submitBtn = document.getElementById('submitBtn');
   submitBtn.disabled = true;
   submitBtn.innerHTML = '<div class="spinner"></div> جاري الإضافة...';
-  
+
   try {
     let imageData = '';
     if (imageInput.files[0]) {
       imageData = await readFileAsDataURL(imageInput.files[0]);
     }
+
     const newGroup = {
-      name, link, members, category,
+      name,
+      link,
+      members,
+      category,
       image: imageData,
       favorite: false,
       createdAt: new Date().toISOString()
     };
-    await push(groupsRef, newGroup);
+
+    await push(telegramGroupsRef, newGroup);
+
+    // إعادة تعيين النموذج
     document.getElementById('groupForm').reset();
     document.getElementById('imagePreview').style.display = 'none';
     document.getElementById('imageUpload').querySelector('i').style.display = 'block';
     document.getElementById('imageUpload').querySelector('p').style.display = 'block';
+
     toggleForm();
     showToast('تم إضافة القروب بنجاح!', 'success');
+
   } catch (error) {
+    console.error('Error adding group:', error);
     showToast('حدث خطأ أثناء إضافة القروب', 'error');
   }
+
   submitBtn.disabled = false;
   submitBtn.innerHTML = '<i class="fas fa-plus"></i> إضافة القروب';
 });
 
+// ============ قراءة الملف كـ Base64 ============
 function readFileAsDataURL(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -1746,26 +1604,28 @@ function readFileAsDataURL(file) {
   });
 }
 
-// ============ عرض القروبات (بدون زر حذف) ============
+// ============ عرض القروبات ============
 function renderGroups() {
   const container = document.getElementById('groupsList');
   let filteredGroups = getFilteredGroups();
+
   if (filteredGroups.length === 0) {
     container.innerHTML = `
       <div class="no-groups">
-        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-telegram"></i>
         <h3>لا توجد قروبات</h3>
-        <p>${currentFilter === 'favorites' ? 'لم تقم بإضافة أي قروب للمفضلة بعد' : 'قم بإضافة أول قروب الآن!'}</p>
+        <p>${currentFilter === 'favorites' ? 'لم تقم بإضافة أي قروب للمفضلة بعد' : 'قم بإضافة أول قروب تلجرام الآن!'}</p>
       </div>
     `;
     return;
   }
+
   container.innerHTML = filteredGroups.map(([key, group], index) => `
     <div class="group-card" style="animation-delay: ${index * 0.1}s">
       <div class="group-image-container">
         ${group.image
           ? `<img src="${group.image}" class="group-image" alt="${escapeHtml(group.name)}" loading="lazy">`
-          : '<i class="fab fa-whatsapp group-image-placeholder"></i>'
+          : '<i class="fab fa-telegram group-image-placeholder"></i>'
         }
         <span class="category-badge">
           <i class="${categories[group.category]?.icon || 'fas fa-folder'}"></i>
@@ -1791,7 +1651,7 @@ function renderGroups() {
         </div>
         <div class="group-actions">
           <a href="${group.link}" target="_blank" class="action-btn join-btn">
-            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-telegram"></i>
             انضمام
           </a>
           <button class="action-btn copy-btn" onclick="copyLink('${group.link}')">
@@ -1802,20 +1662,28 @@ function renderGroups() {
             <i class="fas fa-share-alt"></i>
             مشاركة
           </button>
-          <!-- تم إزالة زر الحذف من هنا -->
+          <button class="action-btn delete-btn" onclick="openDeleteModal('${key}')">
+            <i class="fas fa-trash"></i>
+            حذف
+          </button>
         </div>
       </div>
     </div>
   `).join('');
 }
 
+// ============ الفلاتر والترتيب ============
 function getFilteredGroups() {
   let entries = Object.entries(groups);
+
+  // فلتر التصنيف
   if (currentFilter === 'favorites') {
     entries = entries.filter(([key, g]) => g.favorite === true);
   } else if (currentFilter !== 'all') {
     entries = entries.filter(([key, g]) => g.category === currentFilter);
   }
+
+  // فلتر البحث
   const searchTerm = document.getElementById('searchInput').value.toLowerCase();
   if (searchTerm) {
     entries = entries.filter(([key, g]) =>
@@ -1823,6 +1691,8 @@ function getFilteredGroups() {
       (categories[g.category]?.name || '').includes(searchTerm)
     );
   }
+
+  // الترتيب
   const sortBy = document.getElementById('sortSelect').value;
   switch (sortBy) {
     case 'oldest':
@@ -1837,35 +1707,78 @@ function getFilteredGroups() {
     case 'name':
       entries.sort((a, b) => a[1].name.localeCompare(b[1].name, 'ar'));
       break;
-    default:
+    default: // newest
       entries.sort((a, b) => new Date(b[1].createdAt) - new Date(a[1].createdAt));
   }
+
   return entries;
 }
 
 window.setFilter = function(filter) {
   currentFilter = filter;
+
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.filter === filter);
   });
+
   renderGroups();
-};
+}
 
 window.applyFilters = function() {
   renderGroups();
-};
+}
 
 // ============ المفضلة ============
 window.toggleFavorite = async function(key) {
   try {
     const group = groups[key];
     const newFavoriteState = !group.favorite;
-    await update(ref(db, `groups/${key}`), { favorite: newFavoriteState });
-    showToast(newFavoriteState ? 'تم إضافة القروب للمفضلة' : 'تم إزالة القروب من المفضلة', newFavoriteState ? 'success' : 'warning');
+
+    await update(ref(db, `telegram-groups/${key}`), {
+      favorite: newFavoriteState
+    });
+
+    if (newFavoriteState) {
+      showToast('تم إضافة القروب للمفضلة', 'success');
+    } else {
+      showToast('تم إزالة القروب من المفضلة', 'warning');
+    }
   } catch (error) {
+    console.error('Error toggling favorite:', error);
     showToast('حدث خطأ', 'error');
   }
-};
+}
+
+// ============ الحذف ============
+window.openDeleteModal = function(key) {
+  deleteTargetKey = key;
+  document.getElementById('deleteModal').classList.add('active');
+  document.getElementById('passwordInput').value = '';
+  document.getElementById('passwordInput').focus();
+}
+
+window.closeDeleteModal = function() {
+  deleteTargetKey = null;
+  document.getElementById('deleteModal').classList.remove('active');
+}
+
+window.confirmDelete = async function() {
+  const password = document.getElementById('passwordInput').value;
+
+  if (password !== DELETE_PASSWORD) {
+    showToast('كلمة المرور غير صحيحة!', 'error');
+    return;
+  }
+
+  try {
+    await remove(ref(db, `telegram-groups/${deleteTargetKey}`));
+    closeDeleteModal();
+    showToast('تم حذف القروب بنجاح', 'success');
+  } catch (error) {
+    console.error('Error deleting group:', error);
+    showToast('حدث خطأ أثناء الحذف', 'error');
+  }
+}
 
 // ============ النسخ والمشاركة ============
 window.copyLink = function(link) {
@@ -1880,36 +1793,50 @@ window.copyLink = function(link) {
     document.body.removeChild(textarea);
     showToast('تم نسخ الرابط!', 'success');
   });
-};
+}
 
 window.shareGroup = function(name, link) {
-  const shareText = `انضم لقروب "${name}" على واتساب:\n${link}`;
+  const shareText = `انضم لقروب "${name}" على تلجرام:\n${link}`;
+
   if (navigator.share) {
-    navigator.share({ title: name, text: shareText, url: link }).catch(() => {});
+    navigator.share({
+      title: name,
+      text: shareText,
+      url: link
+    }).catch(() => {});
   } else {
     copyLink(link);
     showToast('تم نسخ الرابط للمشاركة!', 'success');
   }
-};
+}
 
-// ============ الإشعارات ============
+// ============ الإشعارات (Toast) ============
 function showToast(message, type = 'success') {
   const container = document.getElementById('toastContainer');
   const toast = document.createElement('div');
   toast.className = `toast ${type}`;
+
   const icons = {
     success: 'fas fa-check-circle',
     error: 'fas fa-exclamation-circle',
     warning: 'fas fa-exclamation-triangle'
   };
-  toast.innerHTML = `<i class="${icons[type] || icons.success}"></i><span>${message}</span>`;
+
+  toast.innerHTML = `
+    <i class="${icons[type] || icons.success}"></i>
+    <span>${message}</span>
+  `;
+
   container.appendChild(toast);
+
   setTimeout(() => {
     toast.style.opacity = '0';
     toast.style.transform = 'translateY(20px)';
     setTimeout(() => toast.remove(), 300);
   }, 3000);
 }
+
+// جعل showToast متاحة عالمياً
 window.showToast = showToast;
 
 // ============ الإحصائيات ============
@@ -1917,6 +1844,7 @@ function updateStats() {
   const groupsArray = Object.values(groups);
   const totalGroups = groupsArray.length;
   const totalFavs = groupsArray.filter(g => g.favorite).length;
+
   document.getElementById('groupCount').textContent = totalGroups.toLocaleString('ar-EG');
   document.getElementById('favCount').textContent = totalFavs.toLocaleString('ar-EG');
   document.getElementById('count-all').textContent = totalGroups;
@@ -1926,14 +1854,17 @@ function updateStats() {
 // ============ أدوات مساعدة ============
 function formatDate(dateString) {
   if (!dateString) return 'غير معروف';
+
   const date = new Date(dateString);
   const now = new Date();
   const diff = now - date;
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
   if (days === 0) return 'اليوم';
   if (days === 1) return 'أمس';
   if (days < 7) return `منذ ${days} أيام`;
   if (days < 30) return `منذ ${Math.floor(days / 7)} أسابيع`;
+
   return date.toLocaleDateString('ar-EG');
 }
 
@@ -1946,40 +1877,122 @@ function escapeHtml(text) {
 // ============ زر الصعود للأعلى ============
 function setupScrollListener() {
   const scrollBtn = document.getElementById('scrollTop');
+
   window.addEventListener('scroll', () => {
-    scrollBtn.classList.toggle('visible', window.scrollY > 300);
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add('visible');
+    } else {
+      scrollBtn.classList.remove('visible');
+    }
   });
 }
+
 window.scrollToTop = function() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 
 // ============ إغلاق المودال ============
 document.getElementById('deleteModal').addEventListener('click', (e) => {
-  if (e.target.id === 'deleteModal') closeDeleteModal();
-});
-document.getElementById('editModal').addEventListener('click', (e) => {
-  if (e.target.id === 'editModal') closeEditModal();
+  if (e.target.id === 'deleteModal') {
+    closeDeleteModal();
+  }
 });
 
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeDeleteModal();
-    closeEditModal();
+    // أيضاً إغلاق الإعلان إذا انتهى العد
+    const skipBtn = document.getElementById('adSkipBtn');
+    if (skipBtn && skipBtn.style.display === 'inline-flex') {
+      document.getElementById('adOverlay').classList.remove('active');
+    }
   }
   if (e.key === 'Enter' && document.getElementById('deleteModal').classList.contains('active')) {
     confirmDelete();
   }
 });
 
-// ============ إزالة الإعلان الوسيط وجعل الانضمام مباشراً ============
+// ============ إعلان Adsterra قبل الانضمام ============
+let adTargetLink = null;
+let adCountdownInterval = null;
+
+// اعتراض نقرات زر الانضمام
 document.addEventListener('click', function(e) {
   const joinBtn = e.target.closest('.join-btn');
   if (joinBtn) {
     e.preventDefault();
-    window.open(joinBtn.getAttribute('href'), '_blank');
+    e.stopPropagation();
+    adTargetLink = joinBtn.getAttribute('href');
+    showAdOverlay();
+  }
+});
+
+function showAdOverlay() {
+  const overlay = document.getElementById('adOverlay');
+  const countdownEl = document.getElementById('adCountdown');
+  const secondsEl = document.getElementById('adSeconds');
+  const skipBtn = document.getElementById('adSkipBtn');
+  const countdownText = document.getElementById('adCountdownText');
+  const progressFill = document.getElementById('adProgressFill');
+
+  overlay.classList.add('active');
+  skipBtn.style.display = 'none';
+  countdownText.style.display = 'block';
+  progressFill.style.width = '0%';
+
+  let seconds = 7;
+  countdownEl.textContent = seconds;
+  secondsEl.textContent = seconds;
+
+  if (adCountdownInterval) clearInterval(adCountdownInterval);
+
+  // بدء شريط التقدم
+  setTimeout(() => {
+    progressFill.style.width = '100%';
+    progressFill.style.transition = 'width 7s linear';
+  }, 50);
+
+  adCountdownInterval = setInterval(() => {
+    seconds--;
+    countdownEl.textContent = seconds;
+    secondsEl.textContent = seconds;
+
+    if (seconds <= 0) {
+      clearInterval(adCountdownInterval);
+      adCountdownInterval = null;
+      countdownText.style.display = 'none';
+      skipBtn.style.display = 'inline-flex';
+    }
+  }, 1000);
+}
+
+// زر الانضمام بعد انتهاء العد
+document.getElementById('adSkipBtn').addEventListener('click', function() {
+  document.getElementById('adOverlay').classList.remove('active');
+  const progressFill = document.getElementById('adProgressFill');
+  progressFill.style.transition = 'none';
+  progressFill.style.width = '0%';
+  if (adTargetLink) {
+    window.open(adTargetLink, '_blank');
+  }
+});
+
+// إغلاق عند النقر خارج المحتوى (فقط بعد انتهاء العد)
+document.getElementById('adOverlay').addEventListener('click', function(e) {
+  if (e.target === this) {
+    const skipBtn = document.getElementById('adSkipBtn');
+    if (skipBtn.style.display === 'inline-flex') {
+      this.classList.remove('active');
+      const progressFill = document.getElementById('adProgressFill');
+      progressFill.style.transition = 'none';
+      progressFill.style.width = '0%';
+    }
   }
 });
 </script>
+
 </body>
 </html>
