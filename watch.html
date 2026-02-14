@@ -4,6 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>قروبات تلجرام - دليل شامل ذكي</title>
+
+<!-- === تحسينات محركات البحث (SEO) === -->
+<meta name="description" content="دليل شامل لقروبات تلجرام العربية. تصفح آلاف القروبات النشطة في مختلف المجالات: عام، ألعاب، دراسة، تقنية، رياضة، ترفيه وأكثر. انضم الآن!">
+<meta name="keywords" content="قروبات تلجرام, رابط قروب تلجرام, مجموعات تلجرام, تلجرام, قروبات, روابط تلجرام, groups telegram">
+<meta name="author" content="دليل قروبات تلجرام">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://your-domain.com/watch.html">
+
+<!-- أيقونة الموقع (Favicon) -->
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<!-- بيانات منظمة للموقع (WebSite) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "دليل قروبات تلجرام",
+  "url": "https://your-domain.com/watch.html",
+  "description": "أكبر دليل عربي لقروبات تلجرام النشطة في جميع المجالات",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://your-domain.com/watch.html?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <script src="https://pl28557264.effectivegatecpm.com/66/c7/7d/66c77d7ac95f5328a050e5b7c4929460.js"></script>
@@ -1203,7 +1231,7 @@ body {
 <header class="header">
   <h1>
     <i class="fab fa-telegram"></i>
-    قروبات تلجرام
+    قروبات تلجرام العربية النشطة
   </h1>
   <div class="stats-bar">
     <div class="stat-item">
@@ -1428,6 +1456,7 @@ onValue(telegramGroupsRef, (snapshot) => {
   groups = snapshot.val() || {};
   renderGroups();
   updateStats();
+  updateStructuredData(); // تحديث البيانات المنظمة للقروبات
   hideLoading();
 }, (error) => {
   console.error('Firebase Error:', error);
@@ -1992,7 +2021,30 @@ document.getElementById('adOverlay').addEventListener('click', function(e) {
     }
   }
 });
-</script>
 
+// ============ بيانات منظمة للقروبات (ItemList) ============
+function updateStructuredData() {
+  const groupsArray = Object.values(groups).slice(0, 10); // آخر 10 قروبات
+  const itemList = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": groupsArray.map((group, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": group.link,
+      "name": group.name,
+      "image": group.image || null
+    }))
+  };
+  // إزالة أي script قديم بنفس النوع
+  const oldScript = document.querySelector('script[data-itemlist="true"]');
+  if (oldScript) oldScript.remove();
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.setAttribute('data-itemlist', 'true');
+  script.textContent = JSON.stringify(itemList);
+  document.head.appendChild(script);
+}
+</script>
 </body>
 </html>
